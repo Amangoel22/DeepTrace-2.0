@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-
+import AnalysisPage from "./pages/AnalysisPage";
 import LandingPage from "./pages/LandingPage";
 import UploadPage from "./pages/UploadPage";
 
@@ -8,6 +8,7 @@ function App() {
     <Routes>
       <Route path="/" element={<LandingPage />} />
       <Route path="/upload" element={<UploadPage />} />
+      <Route path="/analysis" element={<AnalysisPage />} />
     </Routes>
   );
 }

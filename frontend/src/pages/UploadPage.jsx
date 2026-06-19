@@ -84,7 +84,7 @@ function UploadPage() {
             <div
               className={`overflow-hidden rounded-2xl border ${
                 isDark
-                  ? "border-white/10 bg-white/[0.03]"
+                  ? "border-white/10 bg-white/3"
                   : "border-slate-200 bg-white"
               }`}
             >

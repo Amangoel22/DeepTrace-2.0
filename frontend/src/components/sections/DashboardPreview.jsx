@@ -58,8 +58,8 @@ function DashboardPreview() {
         isDark ? "bg-slate-950 text-white" : "bg-white text-slate-950"
       }`}
     >
-      <div className="pointer-events-none absolute right-0 top-1/3 size-[28rem] translate-x-1/3 rounded-full bg-violet-500/[0.06] blur-3xl" />
-      <div className="pointer-events-none absolute bottom-0 left-0 size-96 -translate-x-1/3 rounded-full bg-cyan-500/[0.05] blur-3xl" />
+      <div className="pointer-events-none absolute right-0 top-1/3 size-112 translate-x-1/3 rounded-full bg-violet-500/6 blur-3xl" />
+      <div className="pointer-events-none absolute bottom-0 left-0 size-96 -translate-x-1/3 rounded-full bg-cyan-500/5 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
@@ -87,7 +87,7 @@ function DashboardPreview() {
 
         <div className="mt-14 grid items-start gap-8 lg:mt-16 lg:grid-cols-[1.35fr_0.65fr] lg:gap-6 xl:grid-cols-[1.45fr_0.55fr]">
           <div className="relative min-w-0">
-            <div className="absolute -inset-3 -z-10 rounded-[2rem] bg-gradient-to-r from-cyan-500/10 via-transparent to-violet-500/10 blur-xl" />
+            <div className="absolute -inset-3 -z-10 rounded-4xl bg-linear-to-r from-cyan-500/10 via-transparent to-violet-500/10 blur-xl" />
             <div className={`overflow-hidden rounded-2xl border shadow-2xl ${panelClasses}`}>
               <div
                 className={`flex flex-wrap items-center justify-between gap-3 border-b px-4 py-3 sm:px-5 ${
@@ -120,7 +120,7 @@ function DashboardPreview() {
                     <span className="mb-1 rounded-full bg-emerald-400/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-400">Likely authentic</span>
                   </div>
                   <div className={`mt-4 h-1.5 overflow-hidden rounded-full ${isDark ? "bg-white/10" : "bg-slate-200"}`}>
-                    <div className="h-full w-[92.4%] rounded-full bg-gradient-to-r from-emerald-400 to-teal-400" />
+                    <div className="h-full w-[92.4%] rounded-full bg-linear-to-r from-emerald-400 to-teal-400" />
                   </div>
                 </div>
 
@@ -134,7 +134,7 @@ function DashboardPreview() {
                     <span className={`mb-1 text-[10px] font-medium ${mutedClasses}`}>Low confidence</span>
                   </div>
                   <div className={`mt-4 h-1.5 overflow-hidden rounded-full ${isDark ? "bg-white/10" : "bg-slate-200"}`}>
-                    <div className="h-full w-[8%] rounded-full bg-gradient-to-r from-amber-400 to-rose-400" />
+                    <div className="h-full w-[8%] rounded-full bg-linear-to-r from-amber-400 to-rose-400" />
                   </div>
                 </div>
 
@@ -147,7 +147,7 @@ function DashboardPreview() {
                     <span className={`font-mono text-[10px] ${mutedClasses}`}>00:00 - 01:26</span>
                   </div>
                   <div className="relative mt-4 h-28" aria-label="Line graph of manipulation probability over time">
-                    <div className={`absolute inset-0 rounded-lg bg-[linear-gradient(to_right,transparent_24.8%,currentColor_25%,transparent_25.2%,transparent_49.8%,currentColor_50%,transparent_50.2%,transparent_74.8%,currentColor_75%,transparent_75.2%),linear-gradient(to_bottom,transparent_32.8%,currentColor_33%,transparent_33.2%,transparent_65.8%,currentColor_66%,transparent_66.2%)] ${isDark ? "text-white/[0.06]" : "text-slate-900/[0.06]"}`} />
+                    <div className={`absolute inset-0 rounded-lg bg-[linear-gradient(to_right,transparent_24.8%,currentColor_25%,transparent_25.2%,transparent_49.8%,currentColor_50%,transparent_50.2%,transparent_74.8%,currentColor_75%,transparent_75.2%),linear-gradient(to_bottom,transparent_32.8%,currentColor_33%,transparent_33.2%,transparent_65.8%,currentColor_66%,transparent_66.2%)] ${isDark ? "text-white/6" : "text-slate-900/6"}`} />
                     <div className="absolute inset-x-0 top-[35%] border-t border-dashed border-amber-400/35">
                       <span className="absolute right-0 -top-4 text-[8px] font-medium uppercase tracking-wide text-amber-400">Review threshold</span>
                     </div>
@@ -252,7 +252,7 @@ function DashboardPreview() {
                       <div
                         key={timestamp.time}
                         className={`flex items-center gap-3 rounded-lg border px-3 py-2 ${
-                          isDark ? "border-white/5 bg-white/[0.025]" : "border-slate-200 bg-white"
+                          isDark ? "border-white/5 bg-white/2.5" : "border-slate-200 bg-white"
                         }`}
                       >
                         <span className="font-mono text-[10px] font-semibold text-amber-400">{timestamp.time}</span>
@@ -300,7 +300,7 @@ function DashboardPreview() {
             <div
               className={`flex items-center gap-3 rounded-2xl border border-dashed p-4 sm:col-span-2 lg:col-span-1 ${
                 isDark
-                  ? "border-violet-400/25 bg-violet-400/[0.06] text-violet-300"
+                  ? "border-violet-400/25 bg-violet-400/6 text-violet-300"
                   : "border-violet-500/25 bg-violet-50 text-violet-700"
               }`}
             >

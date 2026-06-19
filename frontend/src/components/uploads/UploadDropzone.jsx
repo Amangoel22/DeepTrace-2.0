@@ -40,7 +40,7 @@ function UploadDropzone() {
     }
 
     return (
-        <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-10 transition-all duration-300 hover:border-cyan-500/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]
+        <div className="rounded-3xl border border-white/10 bg-white/3 p-10 transition-all duration-300 hover:border-cyan-500/30 hover:shadow-[0_0_40px_rgba(34,211,238,0.08)]
 ">
             <input
                 ref={fileInputRef}
@@ -76,7 +76,7 @@ function UploadDropzone() {
                 <div className="mx-auto max-w-xl text-center">
                     <h2 className="text-2xl font-semibold">File Ready</h2>
 
-                    <div className="mt-6 rounded-2xl border border-white/10 bg-white/[0.03] p-6">
+                    <div className="mt-6 rounded-2xl border border-white/10 bg-white/3 p-6">
                         {videoUrl && (
                             <video
                                 src={videoUrl}
